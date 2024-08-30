@@ -73,7 +73,6 @@ window.onscroll = function () {
   }
   if (scrollV >= 5540) {
     inputBox.className = "input-box-show";
-    MessageSubject.focus();
   } else {
     inputBox.className = "input-box";
   }
