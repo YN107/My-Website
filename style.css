@@ -459,6 +459,7 @@ button {
 
 .abdelrahman {
   background-color: #000;
+  padding-right: 10px;
 }
 
 .Elzero {
@@ -467,10 +468,12 @@ button {
 
 .codezilla img {
   border-right: 5px solid white;
+
 }
 
 .abdelrahman img {
   border-right: 5px solid white;
+
 }
 
 .Elzero img {
@@ -478,11 +481,10 @@ button {
 }
 
 .chans img {
-  min-width: 160px;
-  max-width: 210px;
-  width: 21%;
+  width: 300px;
   border-radius: 7px;
   height: 100%;
+  
 }
 
 .chansTxt {
@@ -490,6 +492,8 @@ button {
   color: #fff;
   padding-left: 20px;
   padding: 0, 0;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .chansTxt a {
   color: #fff;
@@ -799,5 +803,9 @@ footer span {
 
   .input-txt input {
     width: 100%;
+  }
+  .chans img{
+    height: 220px;
+    width: 200px;
   }
 }
