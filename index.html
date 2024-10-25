@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Personal Website | Yahia Ashraf</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="web-icon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#home"
+        ><div class="up"><i class="fa-solid fa-arrow-up"></i></div
+      ></a>
+      <i onclick="navM()" class="fa-solid fa-bars"></i>
+      <header>
+        <div class="logo">
+          <h2><a href="#home">Yahia</a></h2>
+        </div>
+        <nav>
+          <a href="#contact">Contact</a>
+          <a href="#chans">Sources</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#home">Home</a>
+          <a class="DL" onclick="sunN()" href="#"
+            ><i class="fa-solid fa-sun"></i
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="home" id="home">
+          <div class="txt">
+            <div class="txt2">
+              <h2>
+                Hello, I'm Yahia<br />
+                <span>W</span><span class="e">e</span><span>b</span>
+                <span>D</span><span class="e">e</span><span>v</span
+                ><span class="e">e</span><span>l</span><span>o</span
+                ><span>p</span><span class="e">e</span><span>r</span>
+              </h2>
+              <a class="mn-btn" href="#projects">My Projects</a>
+            </div>
+            <i class="fa-solid fa-code"></i>
+          </div>
+        </div>
+        <div id="about" class="about">
+          <h2 class="tit">About <span class="titS">Me</span></h2>
+          <div class="box">
+            <p>
+              I'm Yahia Ashraf. I'm 13 years old and started coding when I was
+              11. My goal is to become a FULL-STACK developer. I live in Saudi
+              Arabia, but I'm originally from Egypt. <br /><br /><span
+                >My Skills</span
+              >
+            </p>
+            <div class="animated">
+              <div class="item item1">HTML</div>
+              <div class="item item2">CSS</div>
+              <div class="item item3">JavaScript</div>
+              <div class="item item4">Python</div>
+              <div class="item item5">C</div>
+            </div>
+          </div>
+        </div>
+        <div class="projects" id="projects">
+          <h2 class="tit protit">Projects</h2>
+          <div class="card-pro RF">
+            <h3 class="pro-info">Responsive Form</h3>
+            <iframe src="responseve_form/index1.html" frameborder="0"></iframe>
+          </div>
+          <div class="card-pro RA">
+            <h3 class="pro-info">Responsive Adidas Website</h3>
+            <iframe src="adidas/index2.html" frameborder="0"></iframe>
+          </div>
+          <div class="card-pro S">
+            <h3 class="pro-info">
+              School Website <br /><span>( My School )</span>
+            </h3>
+            <iframe src="Al Ahfad School/indexS.html" frameborder="0"></iframe>
+          </div>
+          <div class="card-pro H">
+            <h3 class="pro-info">My First Website</h3>
+            <iframe src="harrypotter/index4.html" frameborder="0"></iframe>
+          </div>
+          <div class="card-pro D">
+            <h3 class="pro-info">Modern Dashboard</h3>
+            <iframe src="dashboard/index3.html" frameborder="0"></iframe>
+          </div>
+          <div class="card-pro PS">
+            <h3 class="pro-info">Product Management System</h3>
+            <iframe src="Products System/indexS.html" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="chans" id="chans">
+          <h2 class="tit protit">Best <span>Sources</span> To Learn</h2>
+          <div class="chan codezilla">
+            <img src="channels_imgs/codezilla.png" alt="" />
+            <div class="chansTxt">
+              <h3>
+                <a target="_blank" href="https://www.codezilla.courses/"
+                  >Codezilla Course</a
+                >
+              </h3>
+              <p>
+                Learn basics of programming and master Python with Codezilla
+              </p>
+            </div>
+          </div>
+          <div class="chan abdelrahman">
+            <img src="channels_imgs/abdelrahman.png" alt="" />
+            <div class="chansTxt">
+              <h3>
+                <a target="_blank" href="https://nouvil.net/"
+                  >Abdelrahman Gamal</a
+                >
+              </h3>
+              <p>
+                Novel Academy offers diverse learning paths for a rich and easy
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="chan Elzero">
+            <img src="channels_imgs/Elzero.png" alt="" />
+            <div class="chansTxt">
+              <h3>
+                <a target="_blank" href="https://elzero.org/"
+                  >Elzero Web School
+                </a>
+              </h3>
+              <p>
+                The platform provides Arabic courses in web development and
+                programming.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <h2 class="tit">Contact <span class="titS">Me</span></h2>
+          <div class="input-box">
+            <h2 class="cm">Email</h2>
+            <div class="input-txt">
+              <input
+                class="MessageSubject"
+                type="text"
+                placeholder="Message Subject"
+              />
+              <input
+                class="MessageContent"
+                type="text"
+                placeholder="Message Content"
+              />
+              <button onclick="sendEmail()">Send</button>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <h3>Coppyrights @ <span>Yahia Ashraf</span></h3>
+        </footer>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

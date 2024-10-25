@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+body{
+  height: 100vh;
+  background-image: linear-gradient(to right ,#714512,black) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-image: linear-gradient(to right, #bb8242ca 20%,transparent),url(harry.jpg);
+  width: 90%;
+  height: 640px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo{
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+}
+.logo:hover{
+  font-size :30px;
+}
+
+ul{
+  width: 60%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul a{
+  border-bottom: 2px solid transparent  ;
+  transition: all 0.2s ease-in-out;
+}
+
+ul a:hover{
+  border-bottom: 2px solid white ;
+  font-size :20px;
+
+}
+.content{
+  width: 50%;
+  color: #fff;
+}
+
+.content h2{
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  padding-left: 16px;
+  transition: all 1s;
+
+
+}
+
+
+.content p{
+  width: 350px;
+  letter-spacing: 1.5px;
+  padding-left: 16px;
+  transition: all 1s;
+
+
+}
+
+.content button{
+  font-size: 30px;
+  margin-left: 16px;
+  padding: 10px;
+  border-radius:10px ;
+  outline: none;
+  background-color: #dbbb95;
+  margin: 10px;
+  transition: all 1s;
+  border: 2px transparent solid;
+
+}
+
+.content button:hover{
+  border-color: black;
+  font-size: 40px;
+  margin-left: 16px;
+  padding: 10px;
+  border-radius:14px ;
+  outline: none;
+  background-color: transparent;
+  margin: 10px;
+  cursor: pointer;
+}
+.content button:active{
+  background-color: #5f492f;
+
+}
+
+.content h2:hover{
+  font-size: 95px;
+}
+.content p:hover{
+  font-size: 20px;
+}

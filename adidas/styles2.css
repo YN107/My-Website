@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#111,#222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+  clip-path: circle(40% at right 70%);
+}
+
+.container{
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+
+nav .logo{
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  transition: all 0.2s linear;
+}
+nav .logo:hover{
+  font-size: 35px;
+  color: #ffffff75;
+}
+
+nav ul li {
+  margin: 0 6px;
+  list-style: none;
+  display: inline-block;
+
+}
+
+
+nav ul li a{
+  color: #fff;
+  text-decoration: transparent;
+  transition: all 0.2s ease-in-out;
+  word-spacing: 7px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+nav ul li a:hover{
+  font-size: 17px;
+  color: #e80202;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.content .text{
+  color: #fff;
+  width: 40%;
+
+}
+
+.content .text h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.content .text p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.content .image{
+  width: 40%;
+}
+
+.content .image img{
+  width: 400px;
+}
+
+
+
+
+@media (max-width:650px){
+  .content, nav{
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+  }
+  .content .image img{
+    width: 300px;
+  }
+  .content .image , .content .text{
+      width: 100%;
+
+  }
+  body::after{
+    clip-path: circle(50% at bottom);
+  }
+
+}
