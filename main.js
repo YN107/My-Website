@@ -30,7 +30,48 @@ MessageContent.value = "Message Content";
 
 window.onscroll = function () {
   let scrollV = scrollY;
-
+  if (scrollV >= 6782) {
+    document.querySelector(".codezilla").style.width = "100%";
+    document.querySelector(".codezilla").style.height = "auto";
+  } else {
+    document.querySelector(".codezilla").style.width = "30px";
+    document.querySelector(".codezilla").style.height = "200px";
+  }
+  if (scrollV >= 6788) {
+    document.querySelector(".codezilla img").style.opacity = "1";
+    document.querySelector(".codezilla .chansTxt").style.opacity = "1";
+  } else {
+    document.querySelector(".codezilla img").style.opacity = "0";
+    document.querySelector(".codezilla .chansTxt").style.opacity = "0";
+  }
+  if (scrollV >= 7299) {
+    document.querySelector(".abdelrahman").style.width = "100%";
+    document.querySelector(".abdelrahman").style.height = "auto";
+  } else {
+    document.querySelector(".abdelrahman").style.width = "30px";
+    document.querySelector(".abdelrahman").style.height = "200px";
+  }
+  if (scrollV >= 7307) {
+    document.querySelector(".abdelrahman img").style.opacity = "1";
+    document.querySelector(".abdelrahman .chansTxt").style.opacity = "1";
+  } else {
+    document.querySelector(".abdelrahman img").style.opacity = "0";
+    document.querySelector(".abdelrahman .chansTxt").style.opacity = "0";
+  }
+  if (scrollV >= 7445) {
+    document.querySelector(".Elzero").style.width = "100%";
+    document.querySelector(".Elzero").style.height = "auto";
+  } else {
+    document.querySelector(".Elzero").style.width = "30px";
+    document.querySelector(".Elzero").style.height = "200px";
+  }
+  if (scrollV >= 7450) {
+    document.querySelector(".Elzero img").style.opacity = "1";
+    document.querySelector(".Elzero .chansTxt").style.opacity = "1";
+  } else {
+    document.querySelector(".Elzero img").style.opacity = "0";
+    document.querySelector(".Elzero .chansTxt").style.opacity = "0";
+  }
   if (scrollV >= 360) {
     box.className = "box_show";
   } else {
@@ -89,7 +130,8 @@ function sunN() {
   document.querySelectorAll(".titS").forEach(function (element) {
     element.style.color = "#101030";
   });
-  document.querySelector('.input-box').style.background = 'linear-gradient(#11114d,#11114d55)'
+  document.querySelector(".input-box").style.background =
+    "linear-gradient(#11114d,#11114d55)";
   document.querySelector(".protit").style.color = "#fff";
   document.querySelector(".projects").style.background = "#20204e";
   document.querySelector(".contact").style.background = "#20204e";
@@ -114,9 +156,7 @@ function moonN() {
 
 function navM() {
   header.style.display = "block";
-  header.onclick = ()=>{
-  header.style.display = "none";
-  }
-
-  
+  header.onclick = () => {
+    header.style.display = "none";
+  };
 }
