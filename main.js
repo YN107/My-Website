@@ -50,11 +50,6 @@ window.onscroll = function () {
   } else {
     S.className = "card-pro";
   }
-  if (scrollV >= 3468.5) {
-    H.className = "card-pro-show";
-  } else {
-    H.className = "card-pro";
-  }
   if (scrollV >= 4135) {
     D.className = "card-pro-show";
   } else {
