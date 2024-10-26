@@ -451,9 +451,6 @@ button {
   border-radius: 10px;
   padding-left: 3px;
   margin-bottom: 20px;
-  width: 30px;
-  height: 100%;
-  transition: all 1s ease;
 }
 
 .codezilla {
@@ -470,23 +467,19 @@ button {
 }
 
 .chans img {
-  transition: all 0.4s ease;
   border-right: 5px solid white;
   width: 300px;
   border-radius: 7px;
   height: 100%;
-  opacity: 0;
 }
 
 .chansTxt {
-  transition: all 0.4s ease;
   text-align: left;
   color: #fff;
   padding-left: 20px;
   padding: 0, 0;
   flex-wrap: wrap;
   width: 100%;
-  opacity: 0;
 }
 .chansTxt a {
   color: #fff;
