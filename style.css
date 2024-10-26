@@ -516,9 +516,10 @@ footer span {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 945px) {
   .fa-bars {
     display: block;
+    scale: 0.8;
   }
 
   header {
@@ -606,20 +607,14 @@ footer span {
   .input-txt input {
     width: 100%;
   }
-  .chan {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
   .chans img {
-    width: 100%;
-    border-bottom: 5px solid #fff;
-    border-right: 0px;
+    flex-wrap: wrap;
+    width: 150px;
   }
-  .chansTxt {
-    font-size: 15px;
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
+  .chan{
+   height: 150px;
+  }
+  .chansTxt h3{
+    font-size: 20px;
   }
 }
