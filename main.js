@@ -65,11 +65,7 @@ window.onscroll = function () {
   } else {
     up.className = "up";
   }
-  if (scrollV >= 5540) {
-    inputBox.className = "input-box-show";
-  } else {
-    inputBox.className = "input-box";
-  }
+
 };
 
 function sendEmail() {
