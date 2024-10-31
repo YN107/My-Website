@@ -140,7 +140,7 @@ nav a:hover {
   transition: 0.5s;
 }
 
-.mn-btn:hover {
+.mn-btn:hover, .mn-btn1:hover {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -375,18 +375,6 @@ iframe {
 }
 
 .input-box {
-  transform: translateX(-100%);
-  opacity: 0;
-  text-align: center;
-  width: 80%;
-  height: 70%;
-  border-radius: 20px;
-  background: linear-gradient(to bottom, #16162c8f, #2828555e);
-  padding: 30px;
-  transition: 0.6s;
-}
-
-.input-box-show {
   transform: translateX(0);
   opacity: 1;
   text-align: center;
@@ -516,6 +504,16 @@ footer span {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.mn-btn1 {
+  display: none;
+}
+
+.warning{
+  display: none;
+  color: #ff000087;
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 945px) {
   .fa-bars {
     display: block;
@@ -559,6 +557,10 @@ footer span {
     width: 100%;
   }
 
+  .projects {
+    display: none;
+  }
+
   .box_show p {
     font-size: 20px;
     flex-grow: 1;
@@ -592,16 +594,9 @@ footer span {
     letter-spacing: 0.1;
     font-size: 45px;
   }
-  .mn-btn {
-    font-size: 15px;
-    padding: 11px;
-  }
+
   .fa-code {
     display: none;
-  }
-
-  iframe {
-    width: 100%;
   }
 
   .input-txt input {
@@ -609,12 +604,47 @@ footer span {
   }
   .chans img {
     flex-wrap: wrap;
-    width: 150px;
+    width: 170px;
+    border-radius: 50%;
+    border: none;
   }
-  .chan{
-   height: 150px;
+  .chan {
+    flex-direction: column;
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
   }
-  .chansTxt h3{
+  .chansTxt {
+    margin-right: 15px;
+    text-align: center;
+  }
+  .chansTxt h3 {
+    font-size: 23px;
+  }
+  .NP {
+    display: none;
+  }
+  .mn-btn1 {
+    display: inline-block;
+    background-color: #5656a0;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-size: 15px;
+    padding: 11px;
+  }
+  .mn-btn {
+    display: none;
+  }
+  .warning{
+    display: block;
   }
 }
