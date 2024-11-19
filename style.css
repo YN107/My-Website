@@ -94,6 +94,17 @@ nav a:hover {
   z-index: 998;
 }
 
+.fa-youtube{
+  font-size: 30px;
+  color:#5656a0;
+  transition: 1s;
+  padding-left: 25px;
+}
+
+.fa-youtube:hover{
+  color: #7979cb;
+}
+
 .txt {
   height: 100vh;
   color: rgba(255, 255, 255, 0.8);
@@ -138,9 +149,11 @@ nav a:hover {
   font-weight: 700;
   letter-spacing: 2px;
   transition: 0.5s;
+  text-align: center;
 }
 
-.mn-btn:hover, .mn-btn1:hover {
+.mn-btn:hover,
+.mn-btn1:hover {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -495,6 +508,10 @@ footer {
   color: #fff;
   font-weight: 100;
   padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
 }
 
 footer span {
@@ -508,7 +525,7 @@ footer span {
   display: none;
 }
 
-.warning{
+.warning {
   display: none;
   color: #ff000087;
   padding-top: 20px;
@@ -644,7 +661,7 @@ footer span {
   .mn-btn {
     display: none;
   }
-  .warning{
+  .warning {
     display: block;
   }
 }
