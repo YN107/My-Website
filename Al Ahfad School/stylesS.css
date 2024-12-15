@@ -22,7 +22,6 @@ body {
   align-items: center;
   background: url(imgs/school.jpg) no-repeat;
   background-size: cover;
-
 }
 
 .content {
@@ -144,6 +143,8 @@ nav a:hover {
 }
 
 .internatioal i {
+  color: #000;
+
   font-size: 100px;
   padding: 20px 40px;
   padding-right: 60px;
@@ -159,6 +160,8 @@ nav a:hover {
 }
 
 .languages i {
+  color: #000;
+
   font-size: 100px;
   padding: 20px 40px;
   padding-right: 60px;
@@ -175,13 +178,14 @@ nav a:hover {
 }
 
 .arabic i {
+  color: #000;
   font-size: 100px;
   padding: 20px 40px;
   padding-right: 60px;
 }
 
 .text h3 {
-
+  color: #000;
   font-weight: 900;
   font-size: 30px;
   letter-spacing: 2.5px;
@@ -191,6 +195,7 @@ nav a:hover {
   letter-spacing: 1px;
   font-weight: 400;
   padding-bottom: 10px;
+  color: #000;
 }
 
 .playground {
@@ -200,21 +205,20 @@ nav a:hover {
   width: 100%;
   padding-right: 50px;
   text-align: center;
-
 }
-
 
 .pla-tit-p,
 pol-tit-p {
   display: flex;
   flex-direction: column;
+  color: #000;
+
 }
 
 .A-tit {
   font-size: 30px;
   color: #2b2d97;
 }
-
 
 .playground img {
   transform: scale(0.6);
@@ -237,6 +241,8 @@ pol-tit-p {
 
 .activities p {
   letter-spacing: 1px;
+  color: #000;
+
 }
 
 .vids-tit {
@@ -257,13 +263,11 @@ pol-tit-p {
   margin-top: 30px;
 }
 
-
 .videos {
   background-color: rgba(211, 211, 211, 0.5);
   margin: 10px;
   padding: 30px;
   border-radius: 10px;
-
 }
 
 .video {
@@ -274,7 +278,6 @@ pol-tit-p {
   min-height: 224px;
   width: 300px;
   transition: all 0.8s ease;
-
 }
 
 .video:hover {
@@ -300,11 +303,9 @@ pol-tit-p {
   transition: all 0.8s ease;
 }
 
-
 .vid-info a:hover {
   color: #575895;
   font-size: 22px;
-
 }
 
 .contact {
@@ -318,7 +319,6 @@ pol-tit-p {
 phone-card {
   text-align: center;
 }
-
 
 .phone-card .card {
   background-color: #575895;
@@ -339,16 +339,12 @@ phone-card {
   transform: scale(1.07);
 }
 
-
 .phn-tit {
   width: 100%;
   min-height: 100%;
   border-radius: 10px;
   background-color: #575895;
 }
-
-
-
 
 .phn-tit h3 {
   color: white;
@@ -397,15 +393,13 @@ footer p span {
   transform: scale(1.1);
 }
 
-
-@media (max-width:1023px) {
+@media (max-width: 1023px) {
   header {
     padding: 5px;
   }
 
   .logo {
     transform: scale(1.3);
-
   }
 
   nav a {
@@ -457,10 +451,9 @@ footer p span {
 
     padding-right: 100px;
   }
-
 }
 
-@media (max-width:300px) {
+@media (max-width: 300px) {
   body {
     font-size: 10px;
   }
