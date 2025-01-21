@@ -326,6 +326,16 @@ iframe {
   padding: 10px;
 }
 
+.adidas {
+  resize: horizontal;
+  min-width: 410px;
+  max-width: 870px;
+  border: 2px dashed #11114d;
+  background-color: #5656a0; 
+  cursor: ew-resize; 
+}
+
+
 .up {
   transform: translateX(100%);
   opacity: 0;
