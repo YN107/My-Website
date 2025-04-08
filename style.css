@@ -593,9 +593,7 @@ footer h4 span{
 .warning {
   display: none;
   color: #ff000087;
-  position: absolute;
-  left: 13px;
-  top: 15px;
+
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
   padding: 4px;
@@ -638,9 +636,11 @@ footer h4 span{
 
   .about {
     height: 100%;
+    width: 100%;
   }
 
   .box {
+    margin: 0px;
     padding: 0;
     width: 100%;
   }
@@ -652,12 +652,9 @@ footer h4 span{
   .box p {
     font-size: 20px;
     flex-grow: 1;
-    margin: 0;
-    padding: 0;
-  }
-
-  .boxp span {
-    font-size: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
 
   .item {
@@ -688,11 +685,10 @@ footer h4 span{
   .txt h2 {
     margin: 30px 0;
     font-size: 13px;
-    letter-spacing: 0.1;
   }
   .txt span {
     letter-spacing: 0.1;
-    font-size: 45px;
+    font-size: 35px;
   }
 
   l{
@@ -701,7 +697,7 @@ footer h4 span{
   
 
   .input-txt input {
-    width: 200%;
+    width: 100%;
   }
   .chans img {
     flex-wrap: wrap;
