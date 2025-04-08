@@ -1,17 +1,3 @@
-window.addEventListener("load", function () {
-  let messageSubject = document.querySelector(".MessageSubject");
-  let home = document.querySelector(".home");
-
-  if (messageSubject) {
-    messageSubject.focus();
-  }
-
-  setTimeout(function () {
-    if (home) {
-      home.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, 100);
-});
 let header = document.querySelector("header");
 let box = document.querySelector(".box");
 let RF = document.querySelector(".RF");
@@ -27,45 +13,13 @@ let MessageContent = document.querySelector(".MessageContent");
 
 MessageSubject.value = "Message Subject";
 MessageContent.value = "Message Content";
-
 window.onscroll = function () {
   let scrollV = scrollY;
-  if (scrollV >= 360) {
-    box.className = "box_show";
-  } else {
-    box.className = "box";
-  }
-  if (scrollV >= 1335) {
-    RF.className = "card-pro-show";
-  } else {
-    RF.className = "card-pro";
-  }
-  if (scrollV >= 2120.5) {
-    RA.className = "card-pro-show";
-  } else {
-    RA.className = "card-pro";
-  }
-  if (scrollV >= 2813.5) {
-    S.className = "card-pro-show";
-  } else {
-    S.className = "card-pro";
-  }
-  if (scrollV >= 3468.5 ) {
-    D.className = "card-pro-show";
-  } else {
-    D.className = "card-pro";
-  }
-  if (scrollV >= 4135) {
-    PS.className = "card-pro-show";
-  } else {
-    PS.className = "card-pro";
-  }
   if (scrollV >= 910) {
     up.className = "up up-show";
   } else {
     up.className = "up";
   }
-
 };
 
 function sendEmail() {
@@ -73,17 +27,6 @@ function sendEmail() {
 }
 
 function sunN() {
-  document.querySelector(".tit").style.color = "#fff";
-  document.body.style.background =
-    "linear-gradient(to bottom, #3e3e7e, #16162efd)";
-  document.querySelectorAll(".titS").forEach(function (element) {
-    element.style.color = "#101030";
-  });
-  document.querySelector(".input-box").style.background =
-    "linear-gradient(#11114d,#11114d55)";
-  document.querySelector(".protit").style.color = "#fff";
-  document.querySelector(".projects").style.background = "#20204e";
-  document.querySelector(".contact").style.background = "#20204e";
   let navElement = document.querySelector("nav");
   let Moon = document.createElement("a");
   Moon.className = "DL";
@@ -97,6 +40,21 @@ function sunN() {
   navElement.appendChild(Moon);
 
   document.querySelector(".DL").style.display = "none";
+  document.body.style.background = "whitesmoke";
+  document.querySelector('.box p').style.color = "#161a20"
+  document.querySelector('.box p span').style.color = "#5656a0"
+  document.querySelectorAll('.item').forEach(function (elementt) {
+    elementt.style.color = "#0e0e2a"
+  });
+  document.querySelectorAll('.web').forEach(function (ee) {
+    ee.style.color = "#161a20"
+  });
+  document.querySelector('.txt2').style.color = "#4949e4"
+  document.querySelector('.mn-btn').style.backgroundColor = "#161a20"
+  document.querySelectorAll('.tit').forEach(function (element) {
+    element.style.color = "#161a20"
+  });
+  document.querySelector('input').style.backgroundColor = "white"
 }
 
 function moonN() {
