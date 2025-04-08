@@ -23,7 +23,7 @@ window.onscroll = function () {
 };
 
 function sendEmail() {
-  window.location.href = `mailto:yahiaashrafaskar@gmail.com?subject= ${MessageSubject.value} &body=${MessageContent.value}`;
+  window.location.href = `mailto:gemailweb7@gmail.com?subject= ${MessageSubject.value} &body=${MessageContent.value}`;
 }
 
 function sunN() {
