@@ -16,7 +16,6 @@
       <a href="#home"
         ><div class="up"><i class="fa-solid fa-arrow-up"></i></div
       ></a>
-      <i onclick="navM()" class="fa-solid fa-bars"></i>
       <header>
         <div class="logo">
           <h2><a href="#home">Yahia</a></h2>
@@ -27,7 +26,8 @@
           <a class="NP" href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#home">Home</a>
-          <a class="DL" onclick="sunN()"><i class="fa-solid fa-sun"></i></a>
+          <a style="cursor: pointer;" id="moon" onclick="sunN()" ><i class="fa-solid fa-sun"></i></a>
+          <a id="sun" onclick="moonN()" style="display: none; cursor: pointer;"><i class="fa-solid fa-moon"></i></a>
         </nav>
       </header>
       <div class="content">
@@ -35,15 +35,11 @@
           <div class="txt">
             <div class="txt2">
               <h2>
-                <l>Hello, I'm Yahia</l><br/><br/><span class="web">P</span><span class="web">y</span><span class="web">t</span><span class="web">h</span><span class="web">o</span><span class="web">n</span><span class="web"></span><span> D</span><span>e</span><span>v</span
-                ><span>e</span><span>l</span><span>o</span
-                ><span>p</span><span>e</span><span>r</span>
-              </h2>       
+                <strong class="l">Hello, I'm Yahia</strong><br/><br/>
+                <span class="web">P</span><span class="web">y</span><span class="web">t</span><span class="web">h</span><span class="web">o</span><span class="web">n</span>
+                <span> D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
+              </h2>     
               <a class="mn-btn" href="#projects">My Projects</a>
-              <a class="mn-btn1" href="#about">About Me</a>
-              <h4 class="warning">
-                <i class="fa-solid fa-triangle-exclamation"></i> Open with a larger width to display projects
-              </h4>
             </div>
           </div>
         </div>
@@ -67,7 +63,7 @@
         <div class="projects" id="projects">
           <h2 class="tit">Projects</h2>
           <div class="pros-k">
-            <div class="py-pros">
+            <div class="pc py-pros">
               <a href="https://github.com/YN107/Python-Projects">
                 <div class="box-py">
                   <i class="pros-icon fa-brands fa-python"></i>
@@ -79,7 +75,7 @@
                 </div>
               </a>
             </div>
-            <div class="web-pros">
+            <div class="pc web-pros">
               <a href="https://github.com/YN107/Web-Projects">
                 <div class="box-web">
                   <i class="pros-icon fa-solid fa-code"></i>
@@ -162,6 +158,19 @@
             </div>
           </div>
         </div>
+        <div class="footer-m">
+          <div class="mn-dv">
+            <div class="is">
+              <a href="#home"><i class="fa-solid fm fa-house"></i></a>
+              <a href="#about"><i class="fa-solid fm fa-user"></i></a>
+              <a href="#projects"><i class="fa-solid fm fa-code"></i></a>
+              <a href="#chans"><i tabindex="0" class="fa-solid fm fa-graduation-cap"></i></a>
+              <a href="#contact"><i class="fa-solid fm fa-envelope"></i></a>
+              <a style="cursor: pointer;" id="moonn" onclick="sunNM()" ><i  class="fa-solid DL fm fa-sun"></i></a>
+              <a id="sunn" onclick="moonNM()" style="display: none; cursor: pointer;"><i class="fa-solid DL fm fa-moon"></i></a>
+          </div>
+        </div>
+      </div>
         <footer>
           <h4><span>{</span>Yahia Ashraf}</h4>
           <h3>
@@ -169,10 +178,10 @@
             <a target="_blank" href="https://www.youtube.com/@CodeBoxY">
               <i class="fa-brands fa-youtube"></i>
             </a>
-            <a target="_blank" href="https://github.com/YN107">
+            <a target="_blank" href="https://github.com/YahiaAshraf">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a target="_blank" href="https://x.com/Yahiaashraf2010">
+            <a target="_blank" href="https://twitter.com/YahiaAshraf">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </h3>
