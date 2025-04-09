@@ -22,48 +22,73 @@ window.onscroll = function () {
   }
 };
 
+
+function lightMode(){
+  document.body.style.background = "linear-gradient(to right, #fff, #f0f0f0)";
+  document.querySelector('.box p').style.color = "#000";
+  document.querySelector('.box p span').style.color = "#2121f3";
+  document.querySelectorAll('.item').forEach(function (el) {
+    el.style.color = "#444";
+  });
+  document.querySelectorAll('.web').forEach(function (el) {
+    el.style.color = "#000";
+  });
+  document.querySelector('.txt2').style.color = "#000";
+  document.querySelector('.mn-btn').style.backgroundColor = "#161a20";
+  document.querySelectorAll('.tit').forEach(function (el) {
+    el.style.color = "#222";
+  });
+  document.querySelectorAll('input').forEach(function (e){
+    e.style.background = "linear-gradient(to left, #4949e437, #4949e4ba)";
+  })
+}
+
+function darkMode(){
+  document.body.style.background = "linear-gradient(to right, #090913, #16162efd)";
+  document.querySelector('.box p').style.color = "white";
+  document.querySelector('.box p span').style.color = "#6464ff";
+  document.querySelectorAll('.item').forEach(function (el) {
+    el.style.color = "rgba(255, 255, 255, 0.8)";
+  });
+  document.querySelectorAll('.web').forEach(function (el) {
+    el.style.color = "#fff";
+  });
+  document.querySelector('.txt2').style.color = "#fff";
+  document.querySelector('.mn-btn').style.backgroundColor = "#0e0e2a";
+  document.querySelectorAll('.tit').forEach(function (el) {
+    el.style.color = "rgba(255, 255, 255, 0.8)";
+  });
+  document.querySelectorAll('input').forEach(function (e){
+    e.style.background = "linear-gradient(to left, #4949e437, #4949e4ba)";
+  })
+}
+
 function sendEmail() {
   window.location.href = `mailto:gemailweb7@gmail.com?subject= ${MessageSubject.value} &body=${MessageContent.value}`;
 }
 
 function sunN() {
-  let navElement = document.querySelector("nav");
-  let Moon = document.createElement("a");
-  Moon.className = "DL";
-  Moon.setAttribute("onclick", "moonN()");
-  Moon.href = "#";
-  let iconElement = document.createElement("i");
-  iconElement.className = "fa-solid fa-moon";
-
-  Moon.appendChild(iconElement);
-
-  navElement.appendChild(Moon);
-
-  document.querySelector(".DL").style.display = "none";
-  document.body.style.background = "whitesmoke";
-  document.querySelector('.box p').style.color = "#161a20"
-  document.querySelector('.box p span').style.color = "#5656a0"
-  document.querySelectorAll('.item').forEach(function (elementt) {
-    elementt.style.color = "#0e0e2a"
-  });
-  document.querySelectorAll('.web').forEach(function (ee) {
-    ee.style.color = "#161a20"
-  });
-  document.querySelector('.txt2').style.color = "#4949e4"
-  document.querySelector('.mn-btn').style.backgroundColor = "#161a20"
-  document.querySelectorAll('.tit').forEach(function (element) {
-    element.style.color = "#161a20"
-  });
-  document.querySelector('input').style.backgroundColor = "white"
+  lightMode()
+  document.getElementById("moon").style.display = "none";
+  document.getElementById("sun").style.display = "inline-block";
 }
+
 
 function moonN() {
-  window.location.reload();
+  darkMode()
+  document.getElementById("moon").style.display = "inline-block";
+  document.getElementById("sun").style.display = "none";
 }
 
-function navM() {
-  header.style.display = "block";
-  header.onclick = () => {
-    header.style.display = "none";
-  };
+function sunNM() {
+  lightMode()
+  document.getElementById("moonn").style.display = "none";
+  document.getElementById("sunn").style.display = "inline-block";
+}
+
+
+function moonNM() {
+  darkMode()
+  document.getElementById("moonn").style.display = "inline-block";
+  document.getElementById("sunn").style.display = "none";
 }
