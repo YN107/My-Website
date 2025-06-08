@@ -315,6 +315,8 @@ header:hover .logo{
   margin-top: 170px;
   margin-bottom: 50px;
   gap: 70px;
+  z-index: 10;
+
 }
 .fa-arrow-up-right-from-square{
   font-size: 25px;
@@ -328,33 +330,31 @@ header:hover .logo{
 }
 
 
-.web-pros, .py-pros{
+.pc{
   background-color: #090913;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #4949e460, 0 0 30px #a1a1ff30;
-  transition: all 0.5s ease;
+  box-shadow: 0 0 10px #4949e460, 0 0 10px #a1a1ff30;
+  transition: all 0.3s ease-in-out;
   opacity: 0.7;
   margin: auto;
-  width: 100%;
-  height: 70vh;
+  width: 50%;
+  height: 55vh;
   text-align: center;
-  padding: 45px;
+  padding: 30px;
   border-radius: 5px;
+  position: relative;
+  z-index: 10;
+
 }
 
-.py-pros:hover,
-.web-pros:hover{
-  box-shadow: 0 0 35px #5151ec60, 0 0 50px #a0a0f330;
-  transform: rotateX(13deg) rotateY(13deg);
+.pc:hover{
+  box-shadow: -8px 0px 0px #4949e4;
   opacity: 1;
 }
-.py-pros:hover .pros-icon,
-.web-pros:hover .pros-icon{
+.pc:hover .pros-icon{
   color: #4949e4;
 }
 
-.box-py p,
-.box-web p{
+.pc p{
   font-size: 25px;
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -365,23 +365,19 @@ header:hover .logo{
   transition: all 0.5s ease;
 }
 
-.box-py a,
-.box-web a{
+.ptxt{
+  transition: all 0.5s ease;
   color: white;
   font-size: 30px;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 40px;
 }
 
-.ptxt{
-  transition: all 0.5s ease;
-}
 
 .box-py p:hover,
 .ptxt:hover,
 .box-web p:hover{
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
 
@@ -391,7 +387,7 @@ header:hover .logo{
 }
 
 .up {
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: 0.6s;
   opacity: 0;
   width: 60px;
@@ -552,7 +548,6 @@ button {
 
 
 .is{
-  padding: 5px 10px;
   text-align: center;
   height: fit-content;
   text-align: center;
@@ -563,6 +558,7 @@ button {
   transition: all 0.4s ease;
   z-index: 99;
   opacity: 0.8;
+  padding-bottom: 10px;
 }
 
 .is:hover{
@@ -679,7 +675,15 @@ footer h4 span{
   .web-pros, .py-pros{
     width: 80%;
     margin: auto;
-    padding-bottom: 35px;
+    height: 60vh;
+  }
+
+  .web-pros p, .py-pros p{
+    font-size: 23px;
+  }
+
+  .pros-icon{
+    scale: 0.8;
   }
 
   .box p {
@@ -723,10 +727,8 @@ footer h4 span{
   }
 
 
-  
-
   .input-txt input {
-    width: 100%;
+    width: 150%;
   }
   .chans img {
     flex-wrap: wrap;
